@@ -14,8 +14,10 @@ const Home = () => {
           Best Website Builder <br /> for Small Business
         </h2>
       </div>
-      <img id="img1" src={img1} alt="Image 1" />
-      <img id="bg" src={background} alt="Background" />
+      <div className="img-container">
+        <img id="img1" src={img1} alt="Image 1" />
+        <img id="bg" src={background} alt="Background" />
+      </div>
     </div>
   );
 };
