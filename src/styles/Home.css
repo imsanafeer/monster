@@ -1,0 +1,101 @@
+#monster {
+    background-color: white;
+    border-radius: 50%;
+    width: 64px;
+    position: relative;
+    z-index: 1;
+    top: 120px; 
+    left: 10vw; 
+}
+
+#bg {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -1; 
+}
+
+#img1 {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 3; 
+    top: 140px; 
+    left: 10vw; 
+    width: 500px; 
+}
+
+#title {
+
+    font-size: 28px;
+    color: #C6E2E0;
+    font-weight: 100;
+    margin-bottom: 40px;
+    margin-top: 40px; 
+}
+
+#text {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+@media(max-width:1024px) {
+    #bg {
+        width: 40%;
+    }
+    #img1 {
+        width: 35%;
+    }
+    .text-container {
+        width: 80%;
+    }
+
+    #title {
+        font-size: 24px;
+    }
+
+    #text {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+      .text-container {
+        width: 90%;
+    }
+
+    #title {
+        font-size: 20px;
+    }
+
+    #text {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .text-container {
+        width: 100%;
+    }
+
+    #title {
+        font-size: 18px;
+    }
+
+    #text {
+        font-size: 20px;
+    }
+}
